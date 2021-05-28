@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".RoomDetailsActivity">
+
+    <technolifestyle.com.imageslider.FlipperLayout
+        android:id="@+id/flipper_layout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+    <TextView
+        android:padding="5dp"
+        android:background="@color/colorPrimary"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:text="Supreme suit"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:layout_below="@+id/flipper_layout"
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_below="@+id/name"
+        android:layout_above="@+id/book_now"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:padding="20dp"
+                android:layout_below="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:drawablePadding="10dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_bathroom"
+                    android:text="Total Bathrooms : "/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textSize="16sp"
+                    android:id="@+id/bathroom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:drawableLeft="@drawable/ic_ac"
+                    android:drawablePadding="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Air condiotion : "/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textSize="16sp"
+                    android:id="@+id/ac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_tv"
+                    android:text="Television : "/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textSize="16sp"
+                    android:id="@+id/tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_balcony"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:text="Balcony : "/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textSize="16sp"
+                    android:id="@+id/balcony"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_wifi"
+                    android:drawablePadding="10dp"
+                    android:text="Wifi : "/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textSize="16sp"
+                    android:id="@+id/wifi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:drawableLeft="@drawable/ic_lift"
+                    android:drawablePadding="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Lift : "/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textSize="16sp"
+                    android:id="@+id/lift"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:drawableLeft="@drawable/ic_pool"
+                    android:drawablePadding="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Swimming pool : "/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textSize="16sp"
+                    android:id="@+id/sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_price"
+                    android:drawablePadding="10dp"
+                    android:text="Price : "/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textSize="16sp"
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+    <Button
+        android:id="@+id/book_now"
+        android:text="Book now"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>
